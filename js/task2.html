@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        let colors = ["red", "green", "blue", "yellow"];
+        for (let i = 0; i < colors.length; i++) {
+            document.write(i + ": " + colors[i] + "<br>");
+        }
+        let isThereBlue = colors.includes("blue");
+        console.log("Is there blue in the array? " + isThereBlue);
+        let position = colors.indexOf("yellow");
+        console.log("The index of yellow is: " + position);
+        colors.push("purple");
+        colors.unshift("black");
+        colors.shift();
+        colors.pop();
+        // colors[1] = "orange";
+        colors.splice(1, 1, "orange");
+        document.getElementById("demo").innerHTML = colors;
+    </script>
+</body>
+</html>
