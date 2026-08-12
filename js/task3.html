@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="u"></p>
+    <script>
+    let students = [
+        { name: "Ahmad", mark: 80 },
+        { name: "Sara", mark: 95 },
+        { name: "Omar", mark: 45 },
+        { name: "Lina", mark: 70 }
+    ];
+    let result ="";
+    for(let x in students){
+        result += students[x].name;
+        if(students[x].mark >= 50){
+            result += " passed";
+        }
+        else{
+            result += " failed"
+        }
+        result += "<br>";
+    }
+    document.getElementById("u").innerHTML= result;
+    </script>
+</body>
+</html>
