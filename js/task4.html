@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="a">es</p>
+    <p id="ab">es</p>
+    <script>
+        // func double1(x {
+        //     return 2  x ;
+        // }
+        function double1(x) {
+            return 2 * x;
+        }
+        // 2
+        // functiondouble2 x)
+        //         return 2  x;
+        // }
+        // 2
+        function double2 (x){
+        return 2 * x;
+        }
+        //         // 3
+        // function (x) double3 {
+        //   return 2  x;
+        // }
+        // 3
+        function  double3(x) {
+        return 2 * x;
+        }
+        // task 2
+        function sameLength(fname, lname){
+            if(fname.length == lname.length){
+                return "true";
+            }
+            else{
+                return "false";
+            }    
+        }
+        const re= sameLength("zaid","zaid");
+        document.getElementById("a").innerHTML = re;
+        //Task 3
+            function randomNumber(){
+                let min = 1;
+                let max = 16;
+                return Math.random() * (max - min) + min;
+            }
+        document.getElementById("ab").innerHTML = randomNumber();
+    </script>
+</body>
+
+</html>
