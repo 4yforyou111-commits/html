@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <title>Document</title>
+    <style>
+        .body {
+            box-sizing: border-box;
+        }
+
+        .header {
+            background-color: #dce8f8;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .nav {
+            background-color: #0d1b3e;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+    </style>
+    
+    <style>
+        @media (min-width: 1440px) {
+            .skill-col {
+                width: 33.333%;
+                float: left;
+            }
+            .skill-row {
+                flex-direction: column;
+            }
+
+            .skill-img-col,
+            .skill-text-col {
+                width: 100%;
+            }
+            #profile-photo {
+                height: 200px;
+                width: 200px;
+                object-fit: cover;
+                float: left;
+            }
+            .nav-divider {
+                display:none;
+            }
+            li{
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <h1>OYIL Developer</h1>
+        <p>Web Developer</p>
+    </header>
+    <!-- Navigation -->
+    <nav class="nav">
+        <ul class="d-flex flex-column flex-md-row list-unstyled justify-content-between gap-3 w-100">
+            <li class="flex-fill text-center"><a href="#"><i class="bi bi-house"></i> Home</a></li>
+            <hr class="nav-divider">
+            <li class="flex-fill text-center"><a href="#"><i class="bi bi-person"></i> About</a></li>
+            <hr class="nav-divider">
+            <li class="flex-fill text-center"><a href="#"><i class="bi bi-code-slash"></i> Skills</a></li>
+            <hr class="nav-divider">
+            <li class="flex-fill text-center"><a href="#"><i class="bi bi-envelope"></i> Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Profile Section -->
+    <main class="container mt-4">
+        <div class="profile-row">
+            <div class="text-center ">
+                <div class="profile-img-col">
+                    <img  id="profile-photo"
+                        src="https://static.vecteezy.com/system/resources/previews/024/183/525/original/avatar-of-a-man-portrait-of-a-young-guy-illustration-of-male-character-in-modern-color-style-vector.jpg"
+                        alt="your personal photo" style="border-radius: 50%; max-width: 60%; height: 20%;">
+                </div>
+                <div class="profile-text-col">
+                    <h2>OYIL Developer</h2>
+                    <h4 style="color: blue;">Web Developer</h4>
+                    <p>I am a passionate web developer who loves building modern responsive and user-friendly
+                        web applications.I enjoy turning ideas into real digital products.</p>
+                    <button type="button" class="btn btn-primary">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- skills section -->
+    <section class="container mt-4">
+        <h3 class="text-center mb-4">My Skills</h3>
+        <div class="row g-3 skills-cards-row">
+
+            <!-- HTML Card -->
+            <div class="col-12 skill-col">
+                <div class="card">
+                    <div class="row g-0 skill-row">
+                        <div class="col-4 skill-img-col">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsubI1xnS2EsbFC7IKOtHXy3o2yp5zNGHX8-mLk-0nVw&s" class="img-fluid" alt="HTML logo">
+                        </div>
+                        <div class="col-8 skill-text-col">
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: orange;">HTML</h5>
+                                <p class="card-text">The structure of web pages.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CSS Card -->
+            <div class="col-12 skill-col">
+                <div class="card">
+                    <div class="row g-0 skill-row">
+                        <div class="col-4 skill-img-col">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZPDEe7gBc99j6CFp9nu4KsGa8W1o-kR3FADRgUI_44g&s=10" class="img-fluid" alt="CSS logo" style="max-height: 200px;">
+                        </div>
+                        <div class="col-8 skill-text-col">
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: blue;">CSS</h5>
+                                <p class="card-text">The style and design of web pages.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- JavaScript Card -->
+            <div class="col-12 skill-col">
+                <div class="card">
+                    <div class="row g-0 skill-row">
+                        <div class="col-4 skill-img-col">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ829tD1Q0jkNFMV9nmXQBcaOC5koshnDOSr1GuZ8cY6A&s=10" class="img-fluid" alt="JavaScript logo" style="max-height: 200px;">
+                        </div>
+                        <div class="col-8 skill-text-col">
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: #d4a017;">JavaScript</h5>
+                                <p class="card-text">The programming language of the web.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer mt-4 bg-dark text-white text-center py-3"
+        style="background-color: #0d1b3e; text-align: center;">
+        <p>&copy; 2024 OYIL Developer.<br>All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
